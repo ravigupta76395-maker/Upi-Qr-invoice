@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "index.js", "use": "@vercel/node" },
+    { "src": "index.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/create-order", "dest": "index.js" },
+    { "src": "/check-payment/(.*)", "dest": "index.js" },
+    { "src": "/orders", "dest": "index.js" },
+    { "src": "/config", "dest": "index.js" },
+    { "src": "/bot/webhook", "dest": "index.js" },
+    { "src": "/(.*)", "dest": "index.html" }
+  ]
+}
