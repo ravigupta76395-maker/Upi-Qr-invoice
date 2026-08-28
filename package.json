@@ -1,0 +1,15 @@
+{
+  "name": "fam-pay-transaction-api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "imap": "^0.8.19",
+    "mailparser": "^3.7.2",
+    "qrcode": "^1.5.4"
+  }
+}
